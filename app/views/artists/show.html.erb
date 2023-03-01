@@ -1,11 +1,11 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-8" style="border: 1px solid blue">
-      <h1><%= @artist.name %></h1>
-        <h4>Albums (<%= @album.count %>)</h4>
+      <h1><%= @artists.name %></h1>
+        <h4>Albums (<%= @albums.count %>)</h4>
           <div class="container">
             <div class="row">
-              <% @album.each do |album|  %>
+              <% @albums.each do |album|  %>
                 <div class="col-md-3">
                   <div class="card mb-4 shadow-sm">
                     <img class="card-img-top card-img-artist" src=<%= album.image_url %>>
@@ -20,6 +20,6 @@
             </div>
           </div>
           <div class="col-sm-4" style="border: 1px solid blue">
-            <img src=<%= @artist.image_url %> alt="..." class="img-thumbnail">
+            <img src=<%= @artists.image_url %> alt="..." class="img-thumbnail">
           </div>
     </div>
